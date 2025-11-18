@@ -2,9 +2,9 @@
 home: true
 icon: home
 title: Inicio
-heroImage: /assets/img/logo-menu.jpg
-heroText: UPTP JJ Montilla Documentacion
-tagline: (texto prueba)
+heroImage: /assets/img/logo-menu.png
+heroText: Pst informática Documentación
+tagline: Universidad Politécnica Territorial del estado Portuguesa "Juan de Jesús Montilla"
 actions:
 #  - text: C.C Buenaventura, Oficina M-6, Araure, Estado Portuguesa. Venezuela.
 #    icon: map

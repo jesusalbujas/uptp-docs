@@ -2,9 +2,9 @@
 home: true
 icon: home
 title: Home
-heroImage: /assets/img/cover1.jpg
-heroText: UPTP JJ Montilla Documentation
-tagline: (texto de prueba)
+heroImage: /assets/img/logo-menu.png
+heroText: IT Pst Documentation
+tagline: Universidad Politécnica Territorial del estado Portuguesa "Juan de Jesús Montilla"
 actions:
   - text: Get Started
     link: /get-started/

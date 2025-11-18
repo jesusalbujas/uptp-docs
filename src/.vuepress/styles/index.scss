@@ -16,3 +16,13 @@
     // transition: 0.5s;
     // transition-property: box-shadow;
 }
+.vp-hero-image:hover {
+    filter: drop-shadow(0 0 20px #ff0000b3);
+    background: transparent; /* Asegura que el fondo sea transparente */
+  }
+  
+  :root {
+    --vp-c-accent: #ee7467;
+    --vp-c-accent-bg: #c35656;
+    --vp-c-accent-hover: #fa3a3ab3;
+  }
