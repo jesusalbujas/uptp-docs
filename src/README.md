@@ -2,14 +2,10 @@
 home: true
 icon: home
 title: Home
-heroImage: /assets/img/logo-menu.jpg
+heroImage: /assets/img/cover1.jpg
 heroText: UPTP JJ Montilla Documentation
 tagline: (texto de prueba)
 actions:
-#  - text: C.C Buenaventura, Office M-6, Araure, Portuguesa State. Venezuela.
-#    icon: map
-#    link: /about/location
-
   - text: Get Started
     link: /get-started/
     icon: rocket
@@ -18,11 +14,6 @@ actions:
   - text: Guide
     icon: book-open
     link: /guide/
-
-#  - text: Access the system
-#    details: Completely developed with Javascript using Vue
-#    link: http://api.adempiere.io:3333/realms/adempiere/protocol/openid-connect/auth?response_type=code&redirect_uri=http%3A%2F%2Fapi.adempiere.io%3A8080%2Fwebui&state=QURfQXBwUmVnaXN0cmF0aW9uX0lEPTEwMDAwMDZ8QXBwbGljYXRpb25UeXBlPU9JQQ%3D%3D&client_id=adempiere-zk-cli&scope=openid+email+profile
-#    icon: /assets/img/vue-logo-small.png
 
 #features:
 #  - title: About ERP Consultants and Associates
