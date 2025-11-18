@@ -2,7 +2,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.ts";
 
 export default defineUserConfig({
-  base: "/",
+  base: "/uptp-docs/",
 
   locales: {
     "/": {
