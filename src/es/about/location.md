@@ -1,5 +1,5 @@
 ---
-title: Ubicación 
+title: Titulo 6
 icon: map
 star: true
 sticky: 10
@@ -9,7 +9,6 @@ dir:
 author: Jesús Hernández
 category:
   - Acerca de
-  - ERP
   - Software
   - Equipo
 ---

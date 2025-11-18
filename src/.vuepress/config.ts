@@ -7,12 +7,12 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "en-US",
-      title: "Asset Management in ERP CyA",
+      title: "UPTP",
       description: "",
     },
     "/es/": {
       lang: "es-ES",
-      title: 'Gestión de Activos en ERP CyA',
+      title: 'UPTP',
       description: 'Una documentación de definición de interfaz de usuario basada en componentes, composiciones y diseños de patrones.',
     },
   },

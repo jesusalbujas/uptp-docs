@@ -4,7 +4,7 @@ export const esSidebar = sidebar({
   "/es/": [
     "",
     {
-      text: "Empezar",
+      text: "Titulo 1",
       link: "get-started/",
       icon: "rocket",
       // children: [
@@ -14,16 +14,16 @@ export const esSidebar = sidebar({
       // ]
     },
     { 
-      text: "Guia", 
+      text: "Titulo 2", 
       icon: "book-open", 
       link: "/es/guide/" 
     },
     { 
-      text: "Nosotros", 
+      text: "Titulo 4", 
       icon: "person", 
       link: "/es/about/",
       children: [
-        "/es/about/about-erp",
+        "/es/about/about",
         "/es/about/location"
       ]
     },

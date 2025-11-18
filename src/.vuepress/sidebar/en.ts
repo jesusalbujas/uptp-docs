@@ -58,7 +58,7 @@ export const enSidebar = sidebar({
     icon: "person", 
     link: "/about/",
     children: [
-      "/about/about-erp",
+      "/about/about",
       "/about/location"
     ]
   },

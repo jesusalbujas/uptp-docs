@@ -3,37 +3,37 @@ home: true
 icon: home
 title: Inicio
 heroImage: /assets/img/logo-menu.jpg
-heroText: Desarrollar software de Gestión de Activos.
-tagline: E.R.P. Consultores y Asociados C.A.
+heroText: UPTP JJ Montilla Documentacion
+tagline: (texto prueba)
 actions:
-  - text: C.C Buenaventura, Oficina M-6, Araure, Estado Portuguesa. Venezuela.
-    icon: map
-    link: /es/about/location
+#  - text: C.C Buenaventura, Oficina M-6, Araure, Estado Portuguesa. Venezuela.
+#    icon: map
+#    link: /es/about/location
 
-  - text: Empezar
+  - text: Titulo 1
     link: /es/get-started/
     icon: rocket
     type: primary
 
-  - text: Guia
+  - text: Titulo 2
     icon: book-open
     link: /es/guide/
 
-  - text: Accceder al sistema
-    details: Completamente desarrollado con Javascript usando Vue
-    link: http://api.adempiere.io:3333/realms/adempiere/protocol/openid-connect/auth?response_type=code&redirect_uri=http%3A%2F%2Fapi.adempiere.io%3A8080%2Fwebui&state=QURfQXBwUmVnaXN0cmF0aW9uX0lEPTEwMDAwMDZ8QXBwbGljYXRpb25UeXBlPU9JQQ%3D%3D&client_id=adempiere-zk-cli&scope=openid+email+profile
-    icon: /assets/img/vue-logo-small.png
+#  - text: Accceder al sistema
+#    details: Completamente desarrollado con Javascript usando Vue
+#    link: http://api.adempiere.io:3333/realms/adempiere/protocol/openid-connect/auth?response_type=code&redirect_uri=http%3A%2F%2Fapi.adempiere.io%3A8080%2Fwebui&state=QURfQXBwUmVnaXN0cmF0aW9uX0lEPTEwMDAwMDZ8QXBwbGljYXRpb25UeXBlPU9JQQ%3D%3D&client_id=adempiere-zk-cli&scope=openid+email+profile
+#    icon: /assets/img/vue-logo-small.png
 
 features:
-  - title: Sobre ERP Consultores y Asociados
-    icon: /assets/img/about/erp.jpeg
-    details: Conoce al equipo detrás de la magia. Descubre quiénes son los artífices que hacen posible este proyecto.
-    link: /es/about/about-erp
+#  - title: Sobre ERP Consultores y Asociados
+#    icon: /assets/img/about/erp.jpeg
+#    details: Conoce al equipo detrás de la magia. Descubre quiénes son los artífices que hacen posible este proyecto.
+#    link: /es/about/about-erp
 
-  - title: ¿Quiénes somos?
-    icon: person-chalkboard
-    details: Explora nuestra historia y descubre quiénes somos realmente
-    link: /es/about/
+#  - title: ¿Quiénes somos?
+#    icon: person-chalkboard
+#    details: Explora nuestra historia y descubre quiénes somos realmente
+#    link: /es/about/
 
 #   - title: Layout Enhancement
 #     icon: object-group

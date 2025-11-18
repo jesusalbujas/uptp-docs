@@ -1,5 +1,5 @@
 ---
-title: Development
+title: Titulo 3
 icon: database
 star: true
 sticky: 10
@@ -13,12 +13,3 @@ category:
   - Database
 --- 
 
-In this section, we would like to introduce you to the structured chart and database that was used in the development of this system.
-
-## Structured Letter
-
-![Structured Letter](/assets/img/carta.jpg)
-
-## Database
-
-![Database](/assets/img/database.png)
