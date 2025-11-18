@@ -1,0 +1,4 @@
+User-agent:*
+Disallow:
+
+Sitemap: https://github.com/adempiere/vue-ui-theme.github.io/sitemap.xml
