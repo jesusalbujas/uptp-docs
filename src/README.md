@@ -109,9 +109,6 @@ actions:
 copyright: false
 footer: MIT Licensed | Copyright © 2024-present University Project
 ---
-
-This is a university project carried out in ADempiere UI <i class="fa-brands fa-vuejs" style="color: #63E6BE;"></i> using updated technologies and Keycloak as an external security platform.
-
 <!-- 
 ## 🚀Usage
 
