@@ -1,5 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.ts";
+import { viteBundler } from "@vuepress/bundler-vite";
+
 
 export default defineUserConfig({
   base: "/uptp-docs/",
@@ -17,7 +19,10 @@ export default defineUserConfig({
     },
   },
 
+
   theme,
+
+  bundler: viteBundler(),
 
   // Enable it with pwa
   // shouldPrefetch: false,
