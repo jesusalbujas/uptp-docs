@@ -4,7 +4,7 @@ import { viteBundler } from "@vuepress/bundler-vite";
 
 
 export default defineUserConfig({
-  base: "/uptp-docs/",
+  base: "/",
 
   locales: {
     "/": {
