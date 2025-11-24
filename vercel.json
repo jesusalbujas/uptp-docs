@@ -1,0 +1,6 @@
+{
+    "buildCommand": "npm run build:all",
+    "outputDirectory": "dist",
+    "installCommand": "npm install && cd landing-page && npm install && cd ..",
+    "framework": null
+}
