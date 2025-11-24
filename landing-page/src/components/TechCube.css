@@ -1,0 +1,158 @@
+.cube-container {
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 0 auto;
+    cursor: grab;
+}
+
+.cube-container:active {
+    cursor: grabbing;
+}
+
+.cube-floater {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: float 6s ease-in-out infinite;
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    /* Smooth bounce back */
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+.face {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: rgba(5, 5, 5, 0.9);
+    border: 2px solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(255, 15, 34, 0.2) inset;
+    backdrop-filter: blur(5px);
+    backface-visibility: visible;
+    text-align: center;
+}
+
+.front {
+    transform: rotateY(0deg) translateZ(150px);
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(150px);
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(150px);
+}
+
+.top {
+    transform: rotateX(90deg) translateZ(150px);
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(150px);
+}
+
+.cube-text {
+    font-family: 'Space Grotesk', monospace;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-white);
+    text-shadow: 0 0 10px var(--primary);
+    line-height: 1.4;
+    background: linear-gradient(45deg, #fff, var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Add a subtle grid pattern to faces */
+.face::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        linear-gradient(rgba(255, 15, 34, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 15, 34, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: -1;
+}
+
+.circuit-pattern {
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(255, 15, 34, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 15, 34, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: -1;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .cube-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .face {
+        width: 200px;
+        height: 200px;
+        padding: 15px;
+    }
+
+    .front {
+        transform: rotateY(0deg) translateZ(100px);
+    }
+
+    .back {
+        transform: rotateY(180deg) translateZ(100px);
+    }
+
+    .right {
+        transform: rotateY(90deg) translateZ(100px);
+    }
+
+    .left {
+        transform: rotateY(-90deg) translateZ(100px);
+    }
+
+    .top {
+        transform: rotateX(90deg) translateZ(100px);
+    }
+
+    .bottom {
+        transform: rotateX(-90deg) translateZ(100px);
+    }
+
+    .cube-text {
+        font-size: 1.2rem;
+    }
+}

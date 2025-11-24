@@ -1,10 +1,20 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.ts";
 import { viteBundler } from "@vuepress/bundler-vite";
+import crypto from "node:crypto";
+
+// Polyfill for Node < 21.7.0
+// @ts-ignore
+if (!crypto.hash) {
+  // @ts-ignore
+  crypto.hash = (algorithm, data, outputEncoding) => {
+    return crypto.createHash(algorithm).update(data).digest(outputEncoding as any);
+  };
+}
 
 
 export default defineUserConfig({
-  base: "/",
+  base: "/docs/",
 
   locales: {
     "/": {
