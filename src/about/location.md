@@ -1,5 +1,5 @@
 ---
-title: Location
+title: Titulo 6
 icon: map
 star: true
 sticky: 10

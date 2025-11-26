@@ -18,13 +18,8 @@ export default defineUserConfig({
 
   locales: {
     "/": {
-      lang: "en-US",
-      title: "UPTP",
-      description: "",
-    },
-    "/es/": {
       lang: "es-ES",
-      title: 'UPTP',
+      title: 'UPTP Docs',
       description: 'Una documentación de definición de interfaz de usuario basada en componentes, composiciones y diseños de patrones.',
     },
   },

@@ -1,142 +1,89 @@
 ---
 home: true
 icon: home
-title: Home
+title: Inicio
 heroImage: /assets/img/logo-menu.png
-heroText: IT Pst Documentation
-tagline: Universidad Politécnica Territorial del estado Portuguesa "Juan de Jesús Montilla"
+heroText: Documentación UPTP
+tagline: Universidad Politécnica Territorial de Portuguesa "Juan de Jesús Montilla"
 actions:
-  - text: Get Started
+  - text: Comenzar
     link: /get-started/
     icon: rocket
     type: primary
 
-  - text: Guide
+  - text: Guía de Usuario
     icon: book-open
     link: /guide/
+    type: secondary
 
-#features:
-#  - title: About ERP Consultants and Associates
-#    icon: /assets/img/about/erp.jpeg
-#    details: Meet the team behind the magic. Discover who the artisans are that make this project possible.
-#    link: /about/about-erp
+features:
+  - title: Guías de Inicio
+    icon: rocket
+    details: Pasos esenciales para configurar y comenzar a utilizar el sistema.
+    link: /get-started/
 
-#  - title: Who Are We?
-#    icon: person-chalkboard
-#    details: Explore our history and discover who we truly are.
-#    link: /about/
+  - title: Manual de Usuario
+    icon: book
+    details: Documentación detallada sobre todas las funcionalidades del sistema.
+    link: /guide/
 
-#   - title: Layout Enhancement
-#     icon: object-group
-#     details: Adding breadcrumb, footer, improved navbar, improved page nav and etc.
-#     link: /guide/layout/
-
-#   - title: Pageviews and Comments
-#     icon: comment-dots
-#     details: Start pageview statistics and comment support with Waline
-#     link: /guide/feature/comment.html
-
-#   - title: Article Information
-#     icon: circle-info
-#     details: Add author, writing date, reading time, word count and other information to your article
-#     link: /guide/feature/page-info.html
-
-#   - title: Blog Support
-#     icon: blog
-#     details: Listing your articles with their dates, tags and categories with some awesome layouts
-#     link: /guide/blog/
-
-#   - title: Customizable Theme Color
-#     icon: palette
-#     details: Customize theme color
-#     link: /guide/interface/theme-color.html
-
-#   - title: Dark Mode
-#     icon: circle-half-stroke
-#     details: Switch between light and dark modes freely
-#     link: /guide/interface/darkmode.html
-
-#   - title: Full A11y support
-#     icon: universal-access
-#     details: Full support of accessibility in your site
-#     link: /guide/interface/accessibility.html
-
-#   - title: Article Encryption
-#     icon: lock
-#     details: Encrypt you articles based on page links, so that only the one you want could see them
-#     link: /guide/feature/encrypt.html
-
-#   - title: Search
-#     icon: search
-#     details: Support docsearch and client search
-#     link: /guide/feature/search.html
-
-#   - title: Copy Code Blocks
-#     icon: copy
-#     details: Copy codes with one click in code blocks
-#     link: /guide/feature/copy-code.html
-
-#   - title: Image Preview
-#     icon: image
-#     details: Support viewing, zooming, sharing your page img like a gallery
-#     link: /guide/feature/photo-swipe.html
-
-#   - title: SEO Enhancement
-#     icon: dumbbell
-#     details: Optimize pages for search engines
-#     link: /guide/advanced/seo.html
-
-#   - title: Sitemap
-#     icon: sitemap
-#     details: Generate a Sitemap for your site
-#     link: /guide/advanced/sitemap.html
-
-#   - title: Feed
-#     icon: rss
-#     details: Generate feed to allow users to subscribe it
-#     link: /guide/advanced/feed.html
-
-#   - title: PWA
-#     icon: mobile-screen
-#     details: Make your site more like an APP
-#     link: /guide/advanced/pwa.html
-
-#   - title: More New Features
-#     icon: ellipsis
-#     details: Including icon support, fullscreen button, etc.
-#     link: /guide/feature/
+  - title: Desarrollo
+    icon: code
+    details: Recursos técnicos para desarrolladores y colaboradores.
+    link: /development/dev-es
 
 copyright: false
-footer: MIT Licensed | Copyright © 2024-present University Project
+footer: UPTP "Juan de Jesús Montilla" | Ingeniería en Informática
 ---
-<!-- 
-## 🚀Usage
 
-::: code-tabs#language
+## 📚 Nuevos Documentos
 
-@tab TS
+Mantente al día con las últimas actualizaciones de la documentación.
 
-```ts title=".vuepress/config.ts"
-import { defineUserConfig } from "vuepress";
-import { hopeTheme } from "vuepress-theme-hope";
+<div class="new-docs-grid">
 
-export default defineUserConfig({
-  theme: hopeTheme({
-    // your theme config here
-  }),
-});
-```
+::: info 🆕 Instalación de Docker
+Aprende a configurar el entorno de desarrollo con Docker paso a paso.
+[Leer más](/get-started/Docker/)
+:::
 
-@tab JS
+::: tip 🔄 Flujo de Trabajo Git
+Guía actualizada sobre las mejores prácticas para el control de versiones.
+[Leer más](/guide/)
+:::
 
-```js title=".vuepress/config.js"
-import { hopeTheme } from "vuepress-theme-hope";
+::: note 🛠️ Configuración de Base de Datos
+Nuevas instrucciones para la configuración inicial de PostgreSQL.
+[Leer más](/development/dev-es)
+:::
 
-export default {
-  theme: hopeTheme({
-    // your theme config here
-  }),
-};
-```
+</div>
 
-::: -->
+## 🚀 Recursos Destacados
+
+Descubre las secciones más visitadas de nuestra documentación.
+
+::: details 🎓 Para Estudiantes
+- [Plan de Estudios](#)
+- [Reglamento Interno](#)
+- [Calendario Académico](#)
+:::
+
+::: details 💻 Para Desarrolladores
+- [Guía de Contribución](/development/dev-es)
+- [Estándares de Código](/development/dev-es)
+- [Arquitectura del Sistema](/development/dev-es)
+:::
+
+<style>
+.new-docs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.new-docs-grid .custom-container {
+  margin: 0 !important;
+}
+</style>

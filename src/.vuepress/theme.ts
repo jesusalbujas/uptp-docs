@@ -4,18 +4,16 @@ import { enSidebar, zhSidebar, esSidebar } from "./sidebar/index.ts";
 import { MR_HOPE_AVATAR } from "./logo.js";
 
 export default hopeTheme({
-  hostname: "https://github.com/adempiere/vue-ui-theme.github.io",
+  hostname: "https://github.com/jesusalbujas/uptp-docs",
 
   author: {
     name: "Jesús Albujas",
     url: "https://github.com/jesusalbujas",
   },
 
-  iconAssets: "fontawesome-with-brands",
+  logo: "/assets/img/logo-menu.png",
 
-  logo: "/assets/img/about/erp.jpeg",
-
-  repo: "https://github.com/jesusalbujas/adempiere-landing-page",
+  repo: "https://github.com/jesusalbujas/uptp-docs",
 
   docsDir: "src",
 
@@ -63,25 +61,6 @@ export default hopeTheme({
   locales: {
     "/": {
       // navbar
-      navbar: enNavbar,
-
-      // sidebar
-      sidebar: enSidebar,
-
-      footer: "Default footer",
-
-      displayFooter: true,
-
-      metaLocales: {
-        editLink: "Edit this page on GitHub",
-      },
-    },
-
-    /**
-     * Spanish locale config
-     */
-    "/es/": {
-      // navbar
       navbar: esNavbar,
 
       // sidebar
@@ -94,30 +73,6 @@ export default hopeTheme({
       // page meta
       metaLocales: {
         editLink: "Editar esta página en Github",
-      },
-    },
-    /**
-     * Chinese locale config
-     */
-    "/zh/": {
-      // navbar
-      navbar: zhNavbar,
-
-      // sidebar
-      sidebar: zhSidebar,
-
-      footer: "默认页脚",
-
-      displayFooter: true,
-
-      blog: {
-        description: "一个前端开发者",
-        intro: "/zh/intro.html",
-      },
-
-      // page meta
-      metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
       },
     },
   },
@@ -133,6 +88,10 @@ export default hopeTheme({
   // hotReload: true,
 
   plugins: {
+    icon: {
+      assets: "fontawesome-with-brands",
+    },
+
     blog: true,
 
     // install @waline/client before enabling it

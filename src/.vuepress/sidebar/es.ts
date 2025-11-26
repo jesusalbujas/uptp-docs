@@ -1,7 +1,7 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const esSidebar = sidebar({
-  "/es/": [
+  "/": [
     "",
     {
       text: "Titulo 1",
@@ -13,18 +13,18 @@ export const esSidebar = sidebar({
       //   "get-started/Docker/"
       // ]
     },
-    { 
-      text: "Titulo 2", 
-      icon: "book-open", 
-      link: "/es/guide/" 
+    {
+      text: "Titulo 2",
+      icon: "book-open",
+      link: "/guide/"
     },
-    { 
-      text: "Titulo 4", 
-      icon: "person", 
-      link: "/es/about/",
+    {
+      text: "Titulo 4",
+      icon: "person",
+      link: "/about/",
       children: [
-        "/es/about/about",
-        "/es/about/location"
+        "/about/about",
+        "/about/location"
       ]
     },
   ],
