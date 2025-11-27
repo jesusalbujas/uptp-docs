@@ -3,18 +3,23 @@ import { navbar } from "vuepress-theme-hope";
 export const esNavbar = navbar([
   "/",
   {
-    text: "Titulo 1",
-    icon: "rocket",
-    link: "/get-started/"
+    text: "Trayecto I",
+    icon: "compass",
+    link: "/traject-i/"
   },
   {
-    text: "Titulo 2",
-    icon: "book-open",
-    link: "/guide/"
+    text: "Proyectos (II-IV)",
+    icon: "code",
+    link: "/projects/"
   },
   {
-    text: "Titulo 3",
-    icon: "database",
-    link: "/development/dev-es"
+    text: "Recursos",
+    icon: "toolbox",
+    link: "/resources/diagrams"
+  },
+  {
+    text: "Pensum",
+    icon: "graduation-cap",
+    link: "/curriculum/"
   },
 ]);

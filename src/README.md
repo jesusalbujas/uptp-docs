@@ -3,87 +3,113 @@ home: true
 icon: home
 title: Inicio
 heroImage: /assets/img/logo-menu.png
-heroText: Documentación UPTP
+heroText: UPTP - Área de Informática
 tagline: Universidad Politécnica Territorial de Portuguesa "Juan de Jesús Montilla"
 actions:
   - text: Comenzar
-    link: /get-started/
+    link: /guide/beginner-roadmap
     icon: rocket
     type: primary
 
   - text: Guía de Usuario
     icon: book-open
-    link: /guide/
+    link: /projects/phase-v-manuals
+    type: secondary
+
+  - text: Volver al Inicio
+    icon: home
+    link: /
     type: secondary
 
 features:
   - title: Guías de Inicio
     icon: rocket
     details: Pasos esenciales para configurar y comenzar a utilizar el sistema.
-    link: /get-started/
+    link: /guide/beginner-roadmap
 
   - title: Manual de Usuario
     icon: book
     details: Documentación detallada sobre todas las funcionalidades del sistema.
-    link: /guide/
+    link: /projects/phase-v-manuals
 
   - title: Desarrollo
     icon: code
     details: Recursos técnicos para desarrolladores y colaboradores.
-    link: /development/dev-es
+    link: /development/programming-intro
 
 copyright: false
 footer: UPTP "Juan de Jesús Montilla" | Ingeniería en Informática
 ---
 
-## 📚 Nuevos Documentos
+<div class="section-header">
+  <h2>💡 Temas de Vanguardia</h2>
+  <p>Explora las tecnologías que están definiendo el futuro del desarrollo de software.</p>
+</div>
 
-Mantente al día con las últimas actualizaciones de la documentación.
+<div class="vp-card-grid">
 
-<div class="new-docs-grid">
+<a href="/docs/topics/docker" class="custom-card">
+  <div class="custom-card-icon">
+    <i class="fa-brands fa-docker"></i>
+  </div>
+  <h3>Docker</h3>
+  <p>Descubre los contenedores Docker y cómo trabajar con él.</p>
+</a>
 
-::: info 🆕 Instalación de Docker
-Aprende a configurar el entorno de desarrollo con Docker paso a paso.
-[Leer más](/get-started/Docker/)
-:::
+<a href="/docs/topics/git" class="custom-card">
+  <div class="custom-card-icon">
+    <i class="fa-brands fa-git-alt"></i>
+  </div>
+  <h3>Git</h3>
+  <p>Descubre cómo trabajar con Git y colaborar con el mundo.</p>
+</a>
 
-::: tip 🔄 Flujo de Trabajo Git
-Guía actualizada sobre las mejores prácticas para el control de versiones.
-[Leer más](/guide/)
-:::
+<a href="/docs/topics/sql" class="custom-card">
+  <div class="custom-card-icon">
+    <i class="fa-solid fa-database"></i>
+  </div>
+  <h3>SQL</h3>
+  <p>Qué es SQL y lo que debes saber ahora mismo.</p>
+</a>
 
-::: note 🛠️ Configuración de Base de Datos
-Nuevas instrucciones para la configuración inicial de PostgreSQL.
-[Leer más](/development/dev-es)
-:::
+<a href="/docs/topics/nosql" class="custom-card">
+  <div class="custom-card-icon">
+    <i class="fa-solid fa-server"></i>
+  </div>
+  <h3>NoSQL</h3>
+  <p>Qué es NoSQL.</p>
+</a>
 
 </div>
 
-## 🚀 Recursos Destacados
+<div class="section-header">
+  <h2>🚀 Recursos Destacados</h2>
+</div>
 
-Descubre las secciones más visitadas de nuestra documentación.
+<div class="vp-card-grid">
 
-::: details 🎓 Para Estudiantes
-- [Plan de Estudios](#)
-- [Reglamento Interno](#)
-- [Calendario Académico](#)
-:::
+<a href="/docs/curriculum/" class="custom-card">
+  <div class="custom-card-icon">
+    <i class="fa-solid fa-graduation-cap"></i>
+  </div>
+  <h3>Plan de Estudios</h3>
+  <p>Consulta el pensum y las materias de la carrera.</p>
+</a>
 
-::: details 💻 Para Desarrolladores
-- [Guía de Contribución](/development/dev-es)
-- [Estándares de Código](/development/dev-es)
-- [Arquitectura del Sistema](/development/dev-es)
-:::
+<a href="#" class="custom-card">
+  <div class="custom-card-icon">
+    <i class="fa-solid fa-scale-balanced"></i>
+  </div>
+  <h3>Reglamento Interno</h3>
+  <p>Normativas y reglamentos de la universidad.</p>
+</a>
 
-<style>
-.new-docs-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-  margin-top: 2rem;
-}
+<a href="#" class="custom-card">
+  <div class="custom-card-icon">
+    <i class="fa-solid fa-calendar-days"></i>
+  </div>
+  <h3>Calendario Académico</h3>
+  <p>Fechas importantes, inscripciones y evaluaciones.</p>
+</a>
 
-.new-docs-grid .custom-container {
-  margin: 0 !important;
-}
-</style>
+</div>

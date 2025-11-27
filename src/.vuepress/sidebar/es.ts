@@ -4,28 +4,42 @@ export const esSidebar = sidebar({
   "/": [
     "",
     {
-      text: "Titulo 1",
-      link: "get-started/",
-      icon: "rocket",
-      // children: [
-      //   "get-started/Develop/",
-      //   "get-started/Build/",
-      //   "get-started/Docker/"
-      // ]
-    },
-    {
-      text: "Titulo 2",
-      icon: "book-open",
-      link: "/guide/"
-    },
-    {
-      text: "Titulo 4",
-      icon: "person",
-      link: "/about/",
+      text: "Trayecto I",
+      icon: "compass",
+      prefix: "traject-i/",
+      link: "traject-i/",
       children: [
-        "/about/about",
-        "/about/location"
+        "diagnosis",
+        "planning",
+        "execution"
       ]
     },
+    {
+      text: "Proyectos (II-IV)",
+      icon: "code",
+      prefix: "projects/",
+      link: "projects/",
+      children: [
+        "phase-i-planning",
+        "phase-ii-development",
+        "phase-iii-implementation",
+        "phase-iv-results",
+        "phase-v-manuals"
+      ]
+    },
+    {
+      text: "Recursos",
+      icon: "toolbox",
+      prefix: "resources/",
+      children: [
+        "diagrams",
+        "templates"
+      ]
+    },
+    {
+      text: "Pensum",
+      icon: "graduation-cap",
+      link: "curriculum/"
+    }
   ],
 });
