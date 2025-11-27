@@ -39,7 +39,7 @@ export const esSidebar = sidebar({
     {
       text: "Pensum",
       icon: "graduation-cap",
-      link: "curriculum/"
+      link: "pensum/"
     }
   ],
 });
