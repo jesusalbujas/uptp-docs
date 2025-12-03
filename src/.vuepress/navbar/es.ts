@@ -20,6 +20,6 @@ export const esNavbar = navbar([
   {
     text: "Pensum",
     icon: "graduation-cap",
-    link: "/curriculum/"
+    link: "/pensum/"
   },
 ]);

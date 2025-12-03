@@ -39,7 +39,17 @@ export const esSidebar = sidebar({
     {
       text: "Pensum",
       icon: "graduation-cap",
-      link: "pensum/"
+      prefix: "pensum/",
+      link: "pensum/",
+      children: [
+        "trayecto-inicial",
+        "trayecto-1",
+        "trayecto-2",
+        "trayecto-3",
+        "trayecto-4",
+        "postgrado",
+        "estadisticas"
+      ]
     }
   ],
 });
