@@ -7,6 +7,7 @@ category:
 tag:
   - Estadísticas
   - Análisis
+author: Carlos Navas
 ---
 
 # Estadísticas y Análisis del Pensum

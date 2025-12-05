@@ -8,6 +8,8 @@ tag:
   - Ingeniero
   - Seguridad
   - Gestión de Proyectos
+author: Carlos Navas
+
 ---
 
 # Trayecto IV - Ingeniero en Informática

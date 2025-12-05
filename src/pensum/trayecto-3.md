@@ -8,6 +8,8 @@ tag:
   - Desarrollador
   - Sistemas Operativos
   - Base de Datos Avanzada
+author: Carlos Navas
+
 ---
 
 # Trayecto III - Desarrollador de Aplicaciones

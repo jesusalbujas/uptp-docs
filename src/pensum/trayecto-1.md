@@ -8,6 +8,7 @@ tag:
   - Soporte Técnico
   - Hardware
   - Fundamentos
+author: Carlos Navas
 ---
 
 # Trayecto I - Soporte Técnico a Usuarios y Equipos

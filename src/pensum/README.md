@@ -8,6 +8,7 @@ dir:
   order: 1
 category:
   - Pensum
+author: Carlos Navas
 ---
 
 # Pensum de Ingeniería en Informática

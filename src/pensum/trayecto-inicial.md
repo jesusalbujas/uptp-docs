@@ -7,6 +7,8 @@ category:
 tag:
   - Nivelación
   - Fundamentos
+author: Carlos Navas
+
 ---
 
 # Trayecto Inicial

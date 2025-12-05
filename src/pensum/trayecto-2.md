@@ -8,6 +8,8 @@ tag:
   - TSU
   - Programación
   - Redes
+author: Carlos Navas
+
 ---
 
 # Trayecto II - Técnico Superior Universitario en Informática

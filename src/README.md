@@ -18,7 +18,7 @@ actions:
 
   - text: Volver al Inicio
     icon: home
-    link: /
+    link: ../
     type: secondary
 
 features:

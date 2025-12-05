@@ -8,6 +8,7 @@ tag:
   - Postgrado
   - Especialización
   - Maestría
+author: Carlos Navas
 ---
 
 # Programas de Postgrado
