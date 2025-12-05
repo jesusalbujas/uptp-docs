@@ -15,13 +15,69 @@ const Hero = () => {
                     Accede a todos los recursos, guías de estudio y documentación técnica
                     necesaria para triunfar en la carrera de Ingeniería en Informática.
                 </p>
-                <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
-                    <button className="btn btn-primary" style={{ padding: '15px 40px', fontSize: '1.1rem' }} onClick={() => window.location.href = '/docs/'}>
-                        Leer Documentación
-                    </button>
-                    <button className="btn" style={{ padding: '15px 40px', fontSize: '1.1rem', background: 'rgba(255,255,255,0.1)', color: 'white' }} onClick={() => window.location.href = '/docs/guide/'}>
-                        Ver Guía Rápida
-                    </button>
+                <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
+                    gap: '20px',
+                    maxWidth: '700px',
+                    margin: '0 auto',
+                    marginTop: '40px'
+                }}>
+                    <div style={{
+                        background: 'rgba(255, 15, 34, 0.1)',
+                        border: '1px solid rgba(255, 15, 34, 0.3)',
+                        borderRadius: '16px',
+                        padding: '20px',
+                        textAlign: 'center',
+                        transition: 'all 0.3s ease'
+                    }}>
+                        <div style={{ fontSize: '2.5rem', marginBottom: '8px' }}>🎓</div>
+                        <div style={{
+                            fontSize: '1.8rem',
+                            fontWeight: '700',
+                            color: '#ff0f22',
+                            fontFamily: "'Space Grotesk', sans-serif",
+                            marginBottom: '5px'
+                        }}>4 Años</div>
+                        <div style={{ fontSize: '0.85rem', color: '#b8b8b8' }}>Duración</div>
+                    </div>
+                    <div style={{
+                        background: 'rgba(255, 15, 34, 0.1)',
+                        border: '1px solid rgba(255, 15, 34, 0.3)',
+                        borderRadius: '16px',
+                        padding: '20px',
+                        textAlign: 'center',
+                        transition: 'all 0.3s ease'
+                    }}>
+                        <div style={{ fontSize: '2.5rem', marginBottom: '8px' }}>🏆</div>
+                        <div style={{
+                            fontSize: '1.8rem',
+                            fontWeight: '700',
+                            color: '#ff0f22',
+                            fontFamily: "'Space Grotesk', sans-serif",
+                            marginBottom: '5px'
+                        }}>2 Títulos</div>
+                        <div style={{ fontSize: '0.85rem', color: '#b8b8b8' }}>Certificaciones</div>
+                    </div>
+
+                    <div style={{
+                        background: 'rgba(255, 15, 34, 0.1)',
+                        border: '1px solid rgba(255, 15, 34, 0.3)',
+                        borderRadius: '16px',
+                        padding: '20px',
+                        textAlign: 'center',
+                        transition: 'all 0.3s ease'
+                    }}>
+                        <div style={{ fontSize: '2.5rem', marginBottom: '8px' }}>🌍</div>
+                        <div style={{
+                            fontSize: '1.8rem',
+                            fontWeight: '700',
+                            color: '#ff0f22',
+                            fontFamily: "'Space Grotesk', sans-serif",
+                            marginBottom: '5px'
+                        }}>100%</div>
+                        <div style={{ fontSize: '0.85rem', color: '#b8b8b8' }}>Proyectos Reales</div>
+                    </div>
                 </div>
             </div>
 

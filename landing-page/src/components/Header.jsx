@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import uptpIcon from '../assets/uptp.ico';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -6,7 +7,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="logo">
-                <div className="logo-img"></div>
+                <div className="logo-img"><img src={uptpIcon} alt="UPTP Logo" className="logo-img" style={{ width: '40px', height: '40px' }} /></div>
                 <span>UPTP Informática</span>
             </div>
 
@@ -14,12 +15,13 @@ const Header = () => {
                 <a href="/" className="nav-link">Inicio</a>
                 <a href="/docs/" className="nav-link">Documentación</a>
                 <a href="/docs/guide/" className="nav-link">Guía</a>
-                <a href="#" className="nav-link">Pensum</a>
+                <a href="/docs/pensum/" className="nav-link">Pensum</a>
+                <a href="/acerca-de-nosotros" className="nav-link">Acerca de</a>
             </nav>
 
             <div className="header-actions">
                 <button className="btn btn-primary" onClick={() => window.location.href = '/docs/'}>
-                    Ingresar
+                    Ir a la Documentación
                 </button>
             </div>
 
@@ -51,9 +53,10 @@ const Header = () => {
                     <a href="/" className="mobile-nav-link" onClick={() => setMenuOpen(false)}>Inicio</a>
                     <a href="/docs/" className="mobile-nav-link" onClick={() => setMenuOpen(false)}>Documentación</a>
                     <a href="/docs/guide/" className="mobile-nav-link" onClick={() => setMenuOpen(false)}>Guía</a>
-                    <a href="#" className="mobile-nav-link" onClick={() => setMenuOpen(false)}>Pensum</a>
+                    <a href="/docs/pensum/" className="mobile-nav-link" onClick={() => setMenuOpen(false)}>Pensum</a>
+                    <a href="/acerca-de-nosotros" className="mobile-nav-link" onClick={() => setMenuOpen(false)}>Acerca de</a>
                     <button className="btn btn-primary" style={{ width: '100%', marginTop: '20px' }} onClick={() => window.location.href = '/docs/'}>
-                        Ingresar
+                        Ir a la Documentación
                     </button>
                 </nav>
             </div>
