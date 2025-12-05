@@ -2,5 +2,19 @@
     "buildCommand": "npm run build:all",
     "outputDirectory": "dist",
     "installCommand": "npm install && cd landing-page && npm install && cd ..",
-    "framework": null
+    "framework": null,
+    "rewrites": [
+        {
+            "source": "/acerca-de-nosotros",
+            "destination": "/index.html"
+        },
+        {
+            "source": "/terminos-y-condiciones",
+            "destination": "/index.html"
+        },
+        {
+            "source": "/politica-de-privacidad",
+            "destination": "/index.html"
+        }
+    ]
 }

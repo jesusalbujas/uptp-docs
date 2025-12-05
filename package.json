@@ -11,7 +11,7 @@
     "docs:dev": "vuepress-vite dev src",
     "docs:update-package": "pnpm dlx vp-update",
     "build:all": "node build-all.js",
-    "serve": "npx serve dist"
+    "serve": "npx serve dist --single"
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.26",
