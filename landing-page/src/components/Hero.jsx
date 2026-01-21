@@ -15,68 +15,21 @@ const Hero = () => {
                     Accede a todos los recursos, guías de estudio y documentación técnica
                     necesaria para triunfar en la carrera de Ingeniería en Informática.
                 </p>
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
-                    gap: '20px',
-                    maxWidth: '700px',
-                    margin: '0 auto',
-                    marginTop: '40px'
-                }}>
-                    <div style={{
-                        background: 'rgba(255, 15, 34, 0.1)',
-                        border: '1px solid rgba(255, 15, 34, 0.3)',
-                        borderRadius: '16px',
-                        padding: '20px',
-                        textAlign: 'center',
-                        transition: 'all 0.3s ease'
-                    }}>
-                        <div style={{ fontSize: '2.5rem', marginBottom: '8px' }}>🎓</div>
-                        <div style={{
-                            fontSize: '1.8rem',
-                            fontWeight: '700',
-                            color: '#ff0f22',
-                            fontFamily: "'Space Grotesk', sans-serif",
-                            marginBottom: '5px'
-                        }}>4 Años</div>
-                        <div style={{ fontSize: '0.85rem', color: '#b8b8b8' }}>Duración</div>
+                <div className="hero-stats-grid">
+                    <div className="hero-stat-card">
+                        <div className="stat-icon">🎓</div>
+                        <div className="stat-value">4 Años</div>
+                        <div className="stat-label">Duración</div>
                     </div>
-                    <div style={{
-                        background: 'rgba(255, 15, 34, 0.1)',
-                        border: '1px solid rgba(255, 15, 34, 0.3)',
-                        borderRadius: '16px',
-                        padding: '20px',
-                        textAlign: 'center',
-                        transition: 'all 0.3s ease'
-                    }}>
-                        <div style={{ fontSize: '2.5rem', marginBottom: '8px' }}>🏆</div>
-                        <div style={{
-                            fontSize: '1.8rem',
-                            fontWeight: '700',
-                            color: '#ff0f22',
-                            fontFamily: "'Space Grotesk', sans-serif",
-                            marginBottom: '5px'
-                        }}>2 Títulos</div>
-                        <div style={{ fontSize: '0.85rem', color: '#b8b8b8' }}>Certificaciones</div>
+                    <div className="hero-stat-card">
+                        <div className="stat-icon">🏆</div>
+                        <div className="stat-value">2 Títulos</div>
+                        <div className="stat-label">Certificaciones</div>
                     </div>
-
-                    <div style={{
-                        background: 'rgba(255, 15, 34, 0.1)',
-                        border: '1px solid rgba(255, 15, 34, 0.3)',
-                        borderRadius: '16px',
-                        padding: '20px',
-                        textAlign: 'center',
-                        transition: 'all 0.3s ease'
-                    }}>
-                        <div style={{ fontSize: '2.5rem', marginBottom: '8px' }}>🌍</div>
-                        <div style={{
-                            fontSize: '1.8rem',
-                            fontWeight: '700',
-                            color: '#ff0f22',
-                            fontFamily: "'Space Grotesk', sans-serif",
-                            marginBottom: '5px'
-                        }}>100%</div>
-                        <div style={{ fontSize: '0.85rem', color: '#b8b8b8' }}>Proyectos Reales</div>
+                    <div className="hero-stat-card">
+                        <div className="stat-icon">🌍</div>
+                        <div className="stat-value">100%</div>
+                        <div className="stat-label">Proyectos Reales</div>
                     </div>
                 </div>
             </div>

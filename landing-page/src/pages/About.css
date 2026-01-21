@@ -1,0 +1,184 @@
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 140px 40px 80px;
+    color: #ffffff;
+    line-height: 1.8;
+    font-family: 'Outfit', sans-serif;
+}
+
+.about-title {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    color: #ff0f22;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.about-intro {
+    margin-bottom: 40px;
+    color: #b8b8b8;
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.about-team-image-container {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.about-team-image {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 15, 34, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-team-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(255, 15, 34, 0.3);
+}
+
+.about-section {
+    margin-bottom: 50px;
+}
+
+.about-section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ff0f22;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+}
+
+.about-text {
+    color: #b8b8b8;
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+.team-card {
+    background: rgba(255, 15, 34, 0.1);
+    border: 1px solid rgba(255, 15, 34, 0.3);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.team-member-name {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.team-links {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.team-link {
+    color: #ff0f22;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.95rem;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.tech-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contribute-links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-github {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ff0f22;
+    color: #ffffff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-telegram {
+    display: inline-block;
+    padding: 12px 30px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 1px solid rgba(255, 15, 34, 0.3);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.about-footer {
+    margin-top: 60px;
+    padding: 30px;
+    background-color: rgba(255, 15, 34, 0.1);
+    border-radius: 12px;
+    border-left: 4px solid #ff0f22;
+    border: 1px solid rgba(255, 15, 34, 0.3);
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 100px 20px 60px;
+    }
+
+    .about-title {
+        font-size: 2.5rem;
+    }
+
+    .about-intro {
+        font-size: 1rem;
+    }
+
+    .about-section-title {
+        font-size: 1.5rem;
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contribute-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn-github, .btn-telegram {
+        text-align: center;
+    }
+}

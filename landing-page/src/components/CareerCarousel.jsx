@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import './CareerCarousel.css';
 
 const CareerCarousel = () => {
     const scrollRef = useRef(null);
@@ -68,10 +69,17 @@ const CareerCarousel = () => {
 
         // Auto-scroll
         let scrollInterval = setInterval(() => {
-            if (el.scrollLeft >= el.scrollWidth - el.clientWidth) {
+            if (!el) return;
+            // dynamic width calculation
+            const firstCard = el.querySelector('.career-carousel-item');
+            const cardWidth = firstCard ? firstCard.offsetWidth : 300;
+            const gap = window.innerWidth <= 768 ? 15 : 30; // based on CSS
+            const scrollStep = cardWidth + gap;
+
+            if (el.scrollLeft >= el.scrollWidth - el.clientWidth - 10) {
                 el.scrollTo({ left: 0, behavior: 'smooth' });
             } else {
-                el.scrollBy({ left: 300, behavior: 'smooth' });
+                el.scrollBy({ left: scrollStep, behavior: 'smooth' });
             }
         }, 3000);
 
@@ -86,15 +94,21 @@ const CareerCarousel = () => {
             });
             // Restart auto-scroll after manual interaction
             scrollInterval = setInterval(() => {
-                if (el.scrollLeft >= el.scrollWidth - el.clientWidth) {
+                if (!el) return;
+                const firstCard = el.querySelector('.career-carousel-item');
+                const cardWidth = firstCard ? firstCard.offsetWidth : 300;
+                const gap = window.innerWidth <= 768 ? 15 : 30;
+                const scrollStep = cardWidth + gap;
+
+                if (el.scrollLeft >= el.scrollWidth - el.clientWidth - 10) {
                     el.scrollTo({ left: 0, behavior: 'smooth' });
                 } else {
-                    el.scrollBy({ left: 300, behavior: 'smooth' });
+                    el.scrollBy({ left: scrollStep, behavior: 'smooth' });
                 }
             }, 3000);
         };
 
-        el.addEventListener("wheel", onWheel);
+        el.addEventListener("wheel", onWheel, { passive: false });
 
         return () => {
             el.removeEventListener("wheel", onWheel);
@@ -107,70 +121,30 @@ const CareerCarousel = () => {
             <h2 className="section-title">
                 Tu camino hacia el <span>éxito tecnológico</span>
             </h2>
-            <p style={{
-                textAlign: 'center',
-                color: '#b8b8b8',
-                fontSize: '1.2rem',
-                maxWidth: '800px',
-                margin: '0 auto 60px',
-                lineHeight: '1.8'
-            }}>
+            <p className="carousel-intro">
                 Desde el primer día hasta tu título de <strong style={{ color: '#ff0f22' }}>Ingeniero en Informática</strong>,
                 dominarás las tecnologías más demandadas del mercado.
             </p>
             <div className="carousel-container" ref={scrollRef}>
                 {items.map((item, index) => (
-                    <div className="carousel-item" key={index} style={{ minWidth: '280px', height: '350px' }}>
-                        <div style={{
-                            height: '100%',
-                            background: `linear-gradient(135deg, #000 0%, ${item.color} 100%)`,
-                            opacity: 0.9,
-                            display: 'flex',
-                            flexDirection: 'column',
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            padding: '30px 20px',
-                            position: 'relative'
-                        }}>
-                            <div style={{
-                                fontSize: '3rem',
-                                marginBottom: '15px',
-                                filter: 'drop-shadow(0 0 10px rgba(255, 15, 34, 0.5))'
-                            }}>
+                    <div className="career-carousel-item" key={index}>
+                        <div
+                            className="carousel-card-inner"
+                            style={{
+                                background: `linear-gradient(135deg, #000 0%, ${item.color} 100%)`,
+                                opacity: 0.9
+                            }}
+                        >
+                            <div className="carousel-icon">
                                 {item.icon}
                             </div>
-                            <h3 style={{
-                                fontFamily: "'Space Grotesk', sans-serif",
-                                fontSize: '1.5rem',
-                                fontWeight: '700',
-                                color: '#ffffff',
-                                marginBottom: '12px',
-                                textAlign: 'center'
-                            }}>
+                            <h3 className="carousel-item-title">
                                 {item.title}
                             </h3>
-                            <p style={{
-                                color: '#e0e0e0',
-                                fontSize: '0.95rem',
-                                lineHeight: '1.6',
-                                textAlign: 'center',
-                                marginBottom: '15px',
-                                fontFamily: "'Outfit', sans-serif"
-                            }}>
+                            <p className="carousel-item-desc">
                                 {item.desc}
                             </p>
-                            <span style={{
-                                display: 'inline-block',
-                                padding: '6px 12px',
-                                background: 'rgba(255, 15, 34, 0.2)',
-                                border: '1px solid rgba(255, 15, 34, 0.5)',
-                                borderRadius: '20px',
-                                color: '#ff0f22',
-                                fontSize: '0.75rem',
-                                fontWeight: '600',
-                                letterSpacing: '0.5px',
-                                textTransform: 'uppercase'
-                            }}>
+                            <span className="carousel-tag">
                                 {item.trayecto}
                             </span>
                         </div>

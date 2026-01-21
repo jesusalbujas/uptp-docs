@@ -1,0 +1,155 @@
+/* CareerCarousel.css */
+
+.career-carousel-item {
+    min-width: 300px;
+    height: 400px;
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+    scroll-snap-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s ease;
+    flex-shrink: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.career-carousel-item:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: #ff0f22;
+    /* Primary color */
+    box-shadow: 0 20px 50px rgba(255, 15, 34, 0.2);
+}
+
+.carousel-card-inner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    position: relative;
+    /* Gradient background passed via inline style for dynamic colors */
+}
+
+.carousel-icon {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 10px rgba(255, 15, 34, 0.5));
+    transition: transform 0.3s ease;
+}
+
+.career-carousel-item:hover .carousel-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.carousel-item-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.carousel-item-desc {
+    color: #e0e0e0;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Outfit', sans-serif;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.carousel-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    background: rgba(255, 15, 34, 0.2);
+    border: 1px solid rgba(255, 15, 34, 0.5);
+    border-radius: 20px;
+    color: #ff0f22;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.carousel-intro {
+    text-align: center;
+    color: #b8b8b8;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    line-height: 1.8;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .career-carousel-item {
+        min-width: 70vw;
+        /* Responsive width: 70% of screen viewfinder */
+        max-width: 280px;
+        height: 320px;
+        /* Reduced height */
+    }
+
+    .carousel-container {
+        padding: 20px 20px;
+        gap: 15px;
+        scroll-padding-left: 20px;
+        /* Snapping alignment */
+    }
+
+    .carousel-card-inner {
+        padding: 20px 15px;
+    }
+
+    .carousel-icon {
+        font-size: 2.5rem;
+        /* Smaller icon */
+        margin-bottom: 15px;
+    }
+
+    .carousel-item-title {
+        font-size: 1.3rem;
+        /* Smaller title */
+        margin-bottom: 10px;
+    }
+
+    .carousel-item-desc {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        /* Show fewer lines */
+    }
+
+    .carousel-tag {
+        font-size: 0.7rem;
+        padding: 4px 10px;
+    }
+
+    .carousel-intro {
+        font-size: 1rem;
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .career-carousel-item {
+        min-width: 75vw;
+        /* Slightly wider relative to screen on tiny phones */
+        height: 320px;
+    }
+
+    .carousel-container {
+        padding: 20px 20px;
+        gap: 15px;
+    }
+}
